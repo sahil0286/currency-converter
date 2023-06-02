@@ -13,7 +13,14 @@ const SelectCountry=(pro)=> {
     )
   }
 
- 
+  if(error){
+    return "Something went wrong!"
+  }
+
+  const dataFilter = data.filter(item => "currencies" in item);
+  const dataCountries = dataFilter.map(item =>{
+    return `${Object.keys(item.currencies)[0]} - ${item.name.common}`
+  })
   return (
     
   )
