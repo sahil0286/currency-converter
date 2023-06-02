@@ -32,7 +32,22 @@ function App() {
 
   
   return (
-    
+    <Container maxWidth="md" sx={boxStyle}>
+      <Typography variant='h4' sx={{ color:"#2D21F9", fontWeight: "bold"}} >Currency Converter</Typography>
+      <Typography variant='h6' sx={{ marginBottom: "2rem"}}>Check live foreign currency exchange rates</Typography>
+      <Grid container spacing={2}>
+        <InputAmount/>
+        <SelectCountry value={fromCurrency} setValue={setFromCurrency} label="From"/>
+        <SwitchCurrency/>
+        <SelectCountry value={toCurrency} setValue={setToCurrency} label="To"/>
+      </Grid>
+      {firstAmount ? (
+        <Box sx={{textAlign:"left", marginTop: "1rem"}}>
+          <Typography>{firstAmount} {fromCurrency}</Typography>
+          <Typography variant='h5' sx={{color:"green" , marginTop:"5px", fontWeight:"bold"}}>{resultCurrency*firstAmount} {toCurrency}</Typography>
+        </Box>
+      ):""}
+    </Container>
   )
 }
 
