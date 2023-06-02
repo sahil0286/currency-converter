@@ -30,7 +30,17 @@ function App() {
     }
   },[firstAmount, fromCurrency, toCurrency])
 
-  
+  const boxStyle = {
+    background: "white",
+    marginTop: "7rem",
+    textAlign: "center",
+    color: "#222",
+    minHeight: "20rem",
+    borderRadius: 2,
+    padding: "4rem 2rem",
+    boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+    posation: "relative",
+  }
   return (
     <Container maxWidth="md" sx={boxStyle}>
       <Typography variant='h4' sx={{ color:"#2D21F9", fontWeight: "bold"}} >Currency Converter</Typography>
