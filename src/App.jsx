@@ -15,7 +15,20 @@ function App() {
   const codeFromCurrency = fromCurrency.split(" ") [0];
   const codeToCurrency = toCurrency.split(" ") [0];
 
-  
+  useEffect(()=>{
+    if(firstAmount){
+      axios("https://api.freecurrencyapi.com/v1/latest", {
+        params: {
+          apikey: "FfOXtIHOP8gNMbjtd1SQuIIlM6RXhmGV9B26CIHf",
+          base_currency: codeFromCurrency,
+          currencies: codeToCurrency
+        }
+      })
+      .then(res => setResultCurrency(res.data.data[codeToCurrency]))
+      .catch(error => console.log(error))
+
+    }
+  },[firstAmount, fromCurrency, toCurrency])
 
   
   return (
