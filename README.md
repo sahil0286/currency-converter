@@ -11,7 +11,15 @@ The Currency Converter is a web application that allows users to convert between
 
 ## Screenshot
 
+![c1](https://github.com/sahil0286/currency-converter/assets/119412630/27a7f664-ef7a-4514-baf5-2013d2acfca8)
 
+![c2](https://github.com/sahil0286/currency-converter/assets/119412630/0441b15d-a0cd-427f-be13-fee9ab9e3d87)
+
+![c3](https://github.com/sahil0286/currency-converter/assets/119412630/b4933ff0-db14-4e38-b61f-c1758ab78c9f)
+
+![c4](https://github.com/sahil0286/currency-converter/assets/119412630/bc0e2ab4-bcb0-44cf-aa24-c197c4b3b466)
+
+![c5](https://github.com/sahil0286/currency-converter/assets/119412630/2eda9ae4-a5f9-45de-bfb7-21917510a622)
 
 ## Getting Started
 
