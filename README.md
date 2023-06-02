@@ -19,7 +19,7 @@ The Currency Converter is a web application that allows users to convert between
 
 ![c4](https://github.com/sahil0286/currency-converter/assets/119412630/bc0e2ab4-bcb0-44cf-aa24-c197c4b3b466)
 
-![c5](https://github.com/sahil0286/currency-converter/assets/119412630/2eda9ae4-a5f9-45de-bfb7-21917510a622)
+![c5](https://github.com/sahil0286/currency-converter/assets/119412630/5ca32240-79a2-4ade-aea4-5cf07c8dab46)
 
 ## Getting Started
 
