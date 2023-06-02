@@ -22,7 +22,17 @@ const SelectCountry=(pro)=> {
     return `${Object.keys(item.currencies)[0]} - ${item.name.common}`
   })
   return (
-    
+    <Grid item xs={12} md={3}>
+        <Autocomplete
+            value={value}
+            disableClearable
+            onChange={(event, newValue)=>{
+              setValue(newValue);
+            }}
+            options={dataCountries}
+            renderInput={(params)=><TextField {...params} label={label}/>}
+        />
+    </Grid>
   )
 }
 
